@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+      body {
+        display: flex;
+        height: 100vh;
+      }
+      main{
+        margin: auto;
+      }
+
+      .circle {
+        font-size: 10px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        border-radius: 50%;
+        border: 1px solid #353b48;
+        position: relative;
+        background: conic-gradient(yellowgreen 360deg, white 110deg);
+      }
+      .inner-circle {
+        width: 90%;
+        height: 90%;
+        border-radius: inherit;
+        background-color: #353b48;
+        margin: auto;
+        display: flex;
+        color: white;
+        justify-content: center;
+      }
+
+      .inner-circle span {
+        display: flex;
+        align-items: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="circle">
+        <div class="inner-circle">
+          <span>77%</span>
+        </div>
+      </div>
+
+    </main>
+
+  </body>
+</html>
