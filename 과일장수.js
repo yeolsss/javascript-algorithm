@@ -39,14 +39,18 @@
 
 function solution(k, m, score) {
   let answer = 0;
+  // 반복 카운터
   let cnt = ~~(score.length / m);
+  // 카운터가 0이면 1박스가 되지 않기 때문에 return
   if (cnt <= 0) return 0;
   let index = 0;
+  // 내림차순 정렬을 한다.
   score.sort((a, b) => b - a);
   // 상자 loop
   while (index < cnt) {
-    let loopCnt = index * m;
-    let min = score[loopCnt + (m - 1)];
+    // 현재 담고있는 과일 박스 시작 인덱스
+    let boxStartIdx = index * m;
+    let min = score[boxStartIdx + (m - 1)];
     answer += min * m;
     index++;
   }
