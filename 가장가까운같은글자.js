@@ -21,7 +21,6 @@ function solution(s) {
     return acc;
   }, []);
 
-  console.log("answer", answer); //?
   return answer;
 }
 
